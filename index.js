@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const path = require('path');
 
 // The domain of the Canvas LMS
-const domain = "https://canvas.wpi.edu";
+const domain = "https://canvas.edu";
 
 // The list of URLs to download files from
 const urls = [
