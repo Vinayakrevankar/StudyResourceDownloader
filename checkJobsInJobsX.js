@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
-const email = require('./email');
+const fs = require("fs");
+const { exec } = require("child_process");
 
 // The domain of the target website
 const domain = "https://wpi.studentemployment.ngwebsolutions.com/JobX_FindAJob.aspx?t=qs&qs=21";
@@ -71,9 +72,12 @@ async function checkDivContent(page) {
 
       jobs.push(job);
     }
-    const fs = require('fs')
-    fs.writeFileSync('output.json', JSON.stringify(jobs))
-    // Filter out non-federal jobs
+
+    // Write jobs data to output.json
+    fs.writeFileSync('output.json', JSON.stringify(jobs, null, 2));
+
+    // Automatically git commit and push the output.json file
+    gitCommitAndPush();
     // let nonFederalJobs = jobs.filter(val => !val.jobType.toLowerCase().includes('federal'));
 
     // if (nonFederalJobs.length) {
@@ -82,6 +86,32 @@ async function checkDivContent(page) {
   } catch (error) {
     console.log("The div with the specified ID was not found or there was an error parsing the content.", error);
   }
+}
+
+function gitCommitAndPush() {
+  exec('git add output.json', (err, stdout, stderr) => {
+    if (err) {
+      console.error(`Error adding file to git: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+
+    exec('git commit -m "Automated update of output.json"', (err, stdout, stderr) => {
+      if (err) {
+        console.error(`Error committing file: ${stderr}`);
+        return;
+      }
+      console.log(`stdout: ${stdout}`);
+
+      exec('git push', (err, stdout, stderr) => {
+        if (err) {
+          console.error(`Error pushing to repository: ${stderr}`);
+          return;
+        }
+        console.log(`stdout: ${stdout}`);
+      });
+    });
+  });
 }
 
 // Main function to manage the process
