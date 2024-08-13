@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .job-card {
+            margin-bottom: 20px;
+        }
+        .filter-section {
+            margin-bottom: 20px;
+        }
+        .latest-jobs {
+            max-height: 90vh;
+            overflow-y: auto;
+            border-left: 2px solid #dee2e6;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <h1 class="my-4">Job Listings</h1>
+
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <h5>Filter Jobs</h5>
+
+                    <div class="form-group">
+                        <label for="filter-date">Listed After:</label>
+                        <input type="date" id="filter-date" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Job Type:</label>
+                        <div id="job-type-filters">
+                            <!-- Checkboxes will be inserted here -->
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="applyFilters()">Apply Filters</button>
+                </div>
+
+                <div class="row" id="job-container">
+                    <!-- Job cards will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Latest Jobs Section -->
+            <div class="col-md-3 mt-3 latest-jobs">
+                <h4>Latest Jobs Added Today</h4>
+                <ul class="list-group" id="latest-jobs-container">
+                    <!-- Latest jobs will be inserted here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let jobs = [];
+
+        function parseDate(dateString) {
+            const [month, day, year] = dateString.replace(': ', '').split('/');
+            return new Date(`${year}-${month}-${day}`);
+        }
+
+        function sortJobsByDate(jobs) {
+            return jobs.sort((a, b) => parseDate(b.listedDate) - parseDate(a.listedDate));
+        }
+
+        function getUniqueJobTypes(jobs) {
+            const jobTypes = new Set(jobs.map(job => job.jobType.replace(': ', '').trim()));
+            return Array.from(jobTypes);
+        }
+
+        function createJobTypeCheckboxes(jobTypes) {
+            return jobTypes.map(jobType => `
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="filter-${jobType}" value="${jobType}" ${!jobType.includes('Federal')? 'checked': ''}>
+                    <label class="form-check-label" for="filter-${jobType}">${jobType}</label>
+                </div>
+            `).join('');
+        }
+
+        function createJobCard(job) {
+            return `
+                <div class="col-md-4 job-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${job.title}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">${job.employer}</h6>
+                            <p class="card-text">
+                                <strong>Wage:</strong> ${job.wage.replace(': ', '')}<br>
+                                <strong>Openings:</strong> ${job.openings.replace(': ', '')}<br>
+                                <strong>Listed Date:</strong> ${job.listedDate.replace(': ', '')}<br>
+                                <strong>Hours:</strong> ${job.hours}<br>
+                                <strong>Location:</strong> ${job.location}<br>
+                                <strong>Category:</strong> ${job.category}<br>
+                                <strong>Job Type:</strong> ${job.jobType.replace(': ', '')}
+                            </p>
+                            <a href="${job.url}" target="_blank" class="card-link">View Job Details</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function createLatestJobItem(job) {
+            return `
+                <li class="list-group-item">
+                    <a href="${job.url}" target="_blank">${job.title}</a>
+                    <br><small>Employer: ${job.employer}</small>
+
+                    <br><small>Job Type${job.jobType}</small><br>
+                </li>
+            `;
+        }
+
+        function renderJobs(jobs) {
+            const sortedJobs = sortJobsByDate(jobs);
+            const jobContainer = document.getElementById('job-container');
+            jobContainer.innerHTML = sortedJobs.map(createJobCard).join('');
+        }
+
+        function renderLatestJobs(jobs) {
+            const today = new Date().toISOString().split('T')[0];
+            const todayJobs = jobs.filter(job => {
+                const jobDate = parseDate(job.listedDate).toISOString().split('T')[0];
+                return jobDate === today;
+            });
+
+            const latestJobsContainer = document.getElementById('latest-jobs-container');
+            latestJobsContainer.innerHTML = todayJobs.map(createLatestJobItem).join('');
+        }
+
+        function applyFilters() {
+            const selectedDate = document.getElementById('filter-date').value;
+            const selectedJobTypes = Array.from(document.querySelectorAll('#job-type-filters input:checked')).map(cb => cb.value);
+
+            let filteredJobs = jobs;
+
+            if (selectedDate) {
+                const filterDate = new Date(selectedDate);
+                filteredJobs = filteredJobs.filter(job => parseDate(job.listedDate) >= filterDate);
+            }
+
+            if (selectedJobTypes.length > 0) {
+                filteredJobs = filteredJobs.filter(job => selectedJobTypes.includes(job.jobType.replace(': ', '').trim()));
+            }
+
+            renderJobs(filteredJobs);
+        }
+
+        // Fetch jobs from output.json and initialize the UI
+        async function initialize() {
+            try {
+                const response = await fetch('output.json');
+                jobs = await response.json();
+                const jobTypes = getUniqueJobTypes(jobs);
+                const jobTypeFilters = document.getElementById('job-type-filters');
+                jobTypeFilters.innerHTML = createJobTypeCheckboxes(jobTypes);
+                renderJobs(jobs);
+                renderLatestJobs(jobs);
+            } catch (error) {
+                console.error('Error loading job data:', error);
+            }
+        }
+
+        // Initialize the UI on page load
+        window.onload = initialize;
+    </script>
+</body>
+</html>

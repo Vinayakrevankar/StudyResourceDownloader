@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
-const email = require('./email')
+const email = require('./email');
+
 // The domain of the target website
 const domain = "https://wpi.studentemployment.ngwebsolutions.com/JobX_FindAJob.aspx?t=qs&qs=21";
 
@@ -9,48 +10,75 @@ async function checkDivContent(page) {
     await page.waitForSelector('#Skin_body_lvwJobs_pnlScroll');
 
     // Locate the div with ID "Skin_body_lvwJobs_pnlScroll"
-    const divContent = await page.$eval('#Skin_body_lvwJobs_pnlScroll', div => div.innerText);
-
-    const jobSections = divContent.split("\n\n").filter(section => section.trim() !== '');
+    const jobElements = await page.$$('#Skin_body_lvwJobs_pnlScroll .panel.panel-default');
 
     const jobs = [];
-    let currentJob = {};
 
-    jobSections.forEach(section => {
-      const lines = section.split("\n").map(line => line.trim()).filter(line => line !== '');
+    for (const jobElement of jobElements) {
+      let job = {};
 
-      lines.forEach(line => {
-        if (line.startsWith('Employer:')) {
-          currentJob.employer = line.replace('Employer: ', '');
-        } else if (line.startsWith('Wage:')) {
-          currentJob.wage = line.replace('Wage: ', '');
-        } else if (line.startsWith('Openings:')) {
-          currentJob.openings = line.replace('Openings: ', '');
-        } else if (line.startsWith('Listed:')) {
-          currentJob.listedDate = line.replace('Listed: ', '');
-        } else if (line.startsWith('Hours:')) {
-          currentJob.hours = line.replace('Hours: ', '');
-        } else if (line.startsWith('Location:')) {
-          currentJob.location = line.replace('Location: ', '');
-        } else if (line.startsWith('Category:')) {
-          currentJob.category = line.replace('Category: ', '');
-        } else if (line.startsWith('Job Type:')) {
-          currentJob.jobType = line.replace('Job Type: ', '');
-          jobs.push(currentJob);
-          currentJob = {};
-        } else {
-          if (!currentJob.title) {
-            currentJob.title = line;
-          }
-        }
-      });
-    });
+      job.title = await jobElement.$eval('.Bold_Link', el => el.innerText.trim());
+      job.url = await jobElement.$eval('.Bold_Link', el => el.href.trim());
 
-    // console.log();
-    let nonFedralJobs = jobs.filter(val=> !val.jobType.toLowerCase().includes('federal') )
-    if(nonFedralJobs.length){
-        email.sendMail(JSON.stringify(nonFedralJobs, null, 2));
+      // Use try/catch blocks for each field to handle missing elements
+      try {
+        job.employer = await jobElement.$eval('[id*="Employer"]', el => el.innerText.trim());
+      } catch (e) {
+        job.employer = "N/A";
+      }
+
+      try {
+        job.wage = await jobElement.$eval('div.padded_faj strong:nth-of-type(1)', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.wage = "N/A";
+      }
+
+      try {
+        job.openings = await jobElement.$eval('div.padded_faj strong:nth-of-type(2)', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.openings = "N/A";
+      }
+
+      try {
+        job.listedDate = await jobElement.$eval('div.padded_faj strong:nth-of-type(3)', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.listedDate = "N/A";
+      }
+
+      try {
+        job.hours = await jobElement.$eval('div.padded_faj strong:nth-of-type(4)', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.hours = "N/A";
+      }
+
+      try {
+        job.location = await jobElement.$eval('div.padded_faj strong:nth-of-type(5)', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.location = "N/A";
+      }
+
+      try {
+        job.category = await jobElement.$eval('div.padded_faj strong:nth-of-type(6)', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.category = "N/A";
+      }
+
+      try {
+        job.jobType = await jobElement.$eval('div.padded_faj b', el => el.nextSibling.nodeValue.trim());
+      } catch (e) {
+        job.jobType = "N/A";
+      }
+
+      jobs.push(job);
     }
+    const fs = require('fs')
+    fs.writeFileSync('output.json', JSON.stringify(jobs))
+    // Filter out non-federal jobs
+    // let nonFederalJobs = jobs.filter(val => !val.jobType.toLowerCase().includes('federal'));
+
+    // if (nonFederalJobs.length) {
+    //   email.sendMail(JSON.stringify(nonFederalJobs, null, 2));
+    // }
   } catch (error) {
     console.log("The div with the specified ID was not found or there was an error parsing the content.", error);
   }
@@ -63,7 +91,8 @@ async function manageProcess() {
 
   // Open a new page in the browser
   const page = await browser.newPage();
-  let minute = 15
+  let minute = 15;
+
   // Navigate to the target domain
   try {
     await page.goto(domain, { waitUntil: "networkidle2" });
@@ -74,7 +103,6 @@ async function manageProcess() {
     // Set interval to refresh the page and check the content every 15 minutes (15 * 60 * 1000 milliseconds)
     setInterval(async () => {
       try {
-       
         let countdown = minute * 60; // 15 minutes in seconds
         const countdownInterval = setInterval(() => {
           const minutes = Math.floor(countdown / 60);
@@ -102,9 +130,6 @@ async function manageProcess() {
     await browser.waitForTarget(() => false);
   } catch (error) {
     console.log("Error during navigation or processing:", error);
-  } finally {
-    // Close the browser in case of errors or completion
-    // await browser.close();
   }
 }
 
