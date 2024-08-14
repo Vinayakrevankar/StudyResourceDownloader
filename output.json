@@ -62,7 +62,7 @@
   {
     "title": "Biomedical Engineering Lab Assistant",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4592&win=True",
-    "employer": "Biomedical Engineering Lab - JM (Lisa Wall)",
+    "employer": "Biomedical Engineering - JM (Lisa Wall)",
     "wage": ": $15.00/hr",
     "openings": ": 3",
     "listedDate": ": 08/01/2024",
@@ -142,6 +142,54 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Events Office Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4720&win=True",
+    "employer": "Events-JM (William Battelle)",
+    "wage": ": $15.00/hr",
+    "openings": ": 2",
+    "listedDate": ": 08/14/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Graduate Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4695&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Pratap Rao)",
+    "wage": ": $18.33/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/13/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Graduate Assistant"
+  },
+  {
+    "title": "Graduate Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4696&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Statia Canning)",
+    "wage": ": $18.33/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/13/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Graduate Assistant"
+  },
+  {
+    "title": "Graduate Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4705&win=True",
+    "employer": "Business School - JM (Sandhya Balasubramanian)",
+    "wage": ": $18.33/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/13/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Graduate Assistant"
   },
   {
     "title": "Graduate Assistant",
@@ -456,42 +504,6 @@
     "jobType": ": Graduate Assistant"
   },
   {
-    "title": "Graduate Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4705&win=True",
-    "employer": "Business School - JM (Sandhya Balasubramanian)",
-    "wage": ": $18.33/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/13/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Graduate Assistant"
-  },
-  {
-    "title": "Graduate Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4695&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Pratap Rao)",
-    "wage": ": $18.33/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/13/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Graduate Assistant"
-  },
-  {
-    "title": "Graduate Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4696&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Statia Canning)",
-    "wage": ": $18.33/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/13/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Graduate Assistant"
-  },
-  {
     "title": "Home Events Worker",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4679&win=True",
     "employer": "Athletics - JM (Danielle Rafuse)",
@@ -558,6 +570,30 @@
     "wage": ": $15.00/hr",
     "openings": ": 2",
     "listedDate": ": 08/12/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Lab Assistant - Coburn",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4721&win=True",
+    "employer": "Biomedical Engineering - JM (Jeannine Coburn)",
+    "wage": ": $15.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Lab Assistant - Coburn",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4722&win=True",
+    "employer": "Biomedical Engineering - JM (Jeannine Coburn)",
+    "wage": ": $15.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
@@ -706,6 +742,18 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "OER (Open Educational Resources) Analyst",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4719&win=True",
+    "employer": "Scholarly Communication & Open Strategies - JM (Lori Ostapowicz-Critz)",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
   },
   {
     "title": "Office Assistant",
@@ -918,6 +966,18 @@
     "wage": ": $15.00/hr",
     "openings": ": 5",
     "listedDate": ": 08/09/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "University Advancement Video Intern",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4715&win=True",
+    "employer": "Advancement Annual Giving JM (Anna Dealy)",
+    "wage": ": $15.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
