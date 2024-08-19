@@ -76,7 +76,7 @@
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4610&win=True",
     "employer": "Chemistry & Biochemistry - JM (Nick Bold)",
     "wage": ": $15.00/hr",
-    "openings": ": 50",
+    "openings": ": 49",
     "listedDate": ": 08/12/2024",
     "hours": "N/A",
     "location": "N/A",
@@ -672,30 +672,6 @@
     "jobType": ": Hourly Students"
   },
   {
-    "title": "Student Collaborator on Teaching (SCOT)",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4742&win=True",
-    "employer": "Morgan Teaching and Learning Center - JM (Jessi Hill)",
-    "wage": ": $15.00/hr",
-    "openings": ": 5",
-    "listedDate": ": 08/19/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Federal Work-Study"
-  },
-  {
-    "title": "Student Collaborator on Teaching (SCOT)",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4743&win=True",
-    "employer": "Morgan Teaching and Learning Center - JM (Jessi Hill)",
-    "wage": ": $18.25/hr to $25.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/19/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
     "title": "Surface Metrology Assistant",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4633&win=True",
     "employer": "Mechanical and Materials Engineering - JM (Christopher Brown)",
@@ -706,18 +682,6 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Federal Work-Study"
-  },
-  {
-    "title": "Undergraduate Instructional Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4736&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Robert Hyers)",
-    "wage": ": $18.25/hr to $25.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/16/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
   },
   {
     "title": "Undergraduate Instructional Assistant",
@@ -834,6 +798,18 @@
     "wage": ": $18.25/hr to $25.00/hr",
     "openings": ": 1",
     "listedDate": ": 08/15/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
+    "title": "Undergraduate Instructional Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4736&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Robert Hyers)",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/16/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
