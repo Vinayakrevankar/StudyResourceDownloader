@@ -64,7 +64,7 @@
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4608&win=True",
     "employer": "Chemistry & Biochemistry - JM (Nick Bold)",
     "wage": ": $15.00/hr",
-    "openings": ": 4",
+    "openings": ": 3",
     "listedDate": ": 08/12/2024",
     "hours": "N/A",
     "location": "N/A",
@@ -277,18 +277,6 @@
   },
   {
     "title": "Graduate Learning Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4772&win=True",
-    "employer": "Data Science - JM (Ana Maria Young)",
-    "wage": ": $18.33/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/22/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Graduate Assistant"
-  },
-  {
-    "title": "Graduate Learning Assistant",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4617&win=True",
     "employer": "Computer Science - JM (Craig Shue)",
     "wage": ": $18.33/hr",
@@ -322,6 +310,18 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Hourly Research Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4775&win=True",
+    "employer": "Business School - JM (Adrienne Hall-Phillips)",
+    "wage": ": $20.33/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/22/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Research Assistant"
   },
   {
     "title": "Hourly Research Assistant",
@@ -473,7 +473,7 @@
     "employer": "Athletics - JM (Danielle Rafuse)",
     "wage": ": $16.25/hr to $18.00/hr",
     "openings": ": 15",
-    "listedDate": ": 08/22/2024",
+    "listedDate": ": 08/23/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
@@ -490,18 +490,6 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Hourly Students"
-  },
-  {
-    "title": "Mail Clerk",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4750&win=True",
-    "employer": "Mail Services - JM (Jason Lusignan)",
-    "wage": ": $15.00/hr",
-    "openings": ": 25",
-    "listedDate": ": 08/22/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Federal Work-Study"
   },
   {
     "title": "Makerspace Workshop Instructor (Federal Work Study Position)",
@@ -636,18 +624,6 @@
     "jobType": ": Federal Work-Study"
   },
   {
-    "title": "Sports Media – WPI Athletics Sports Information",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4707&win=True",
-    "employer": "Athletics - JM (Danielle Rafuse)",
-    "wage": ": $15.00/hr to $16.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/21/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
     "title": "Student Activities Office Assistant",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4694&win=True",
     "employer": "Student Activities - JM (Christine Ziev)",
@@ -666,18 +642,6 @@
     "wage": ": $15.00/hr to $16.00/hr",
     "openings": ": 1",
     "listedDate": ": 08/15/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
-    "title": "Student Building Manager, Innovation Studio",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4754&win=True",
-    "employer": "Innovation & Entrepreneurship - JM (Lusine Baghsarian)",
-    "wage": ": $15.00/hr to $16.00/hr",
-    "openings": ": 3",
-    "listedDate": ": 08/22/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
@@ -708,18 +672,6 @@
     "jobType": ": Hourly Students"
   },
   {
-    "title": "UH Lab Monitor (Federal Work Study Position)",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4757&win=True",
-    "employer": "Innovation & Entrepreneurship - JM (Mitra Anand)",
-    "wage": ": $15.00/hr",
-    "openings": ": 4",
-    "listedDate": ": 08/21/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Federal Work-Study"
-  },
-  {
     "title": "Undergrad Student Collaborator on Teaching (SCOT)",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4742&win=True",
     "employer": "Morgan Teaching and Learning Center - JM (Jessi Hill)",
@@ -730,54 +682,6 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Federal Work-Study"
-  },
-  {
-    "title": "Undergraduate Instructional Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4708&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Pratap Rao)",
-    "wage": ": $18.25/hr to $25.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/14/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
-    "title": "Undergraduate Instructional Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4709&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Robert Hyers )",
-    "wage": ": $18.25/hr to $25.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/14/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
-    "title": "Undergraduate Instructional Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4711&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Pratap Rao)",
-    "wage": ": $18.25/hr to $25.00/hr",
-    "openings": ": 2",
-    "listedDate": ": 08/14/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
-    "title": "Undergraduate Instructional Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4713&win=True",
-    "employer": "Mechanical and Materials Engineering - JM (Ahmet Sabuncu)",
-    "wage": ": $18.25/hr to $25.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/14/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
   },
   {
     "title": "Undergraduate Instructional Assistant",
@@ -822,6 +726,54 @@
     "wage": ": $18.25/hr to $25.00/hr",
     "openings": ": 1",
     "listedDate": ": 08/15/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
+    "title": "Undergraduate Instructional Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4708&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Pratap Rao)",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
+    "title": "Undergraduate Instructional Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4709&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Robert Hyers )",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
+    "title": "Undergraduate Instructional Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4711&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Pratap Rao)",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 2",
+    "listedDate": ": 08/14/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
+    "title": "Undergraduate Instructional Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4713&win=True",
+    "employer": "Mechanical and Materials Engineering - JM (Ahmet Sabuncu)",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/14/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
