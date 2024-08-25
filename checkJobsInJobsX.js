@@ -145,9 +145,15 @@ async function manageProcess() {
           }
         }, 1000);
 
+        // Wait for 1 second before reload
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
         // Refresh the page
         await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
         console.log("Page refreshed.");
+
+        // Check if the required element is still present
+        await page.waitForSelector('#Skin_body_lvwJobs_pnlScroll', { timeout: 5000 });
 
         // Check the div content after the page reloads
         await checkDivContent(page);
@@ -162,6 +168,7 @@ async function manageProcess() {
     console.log("Error during navigation or processing:", error);
   }
 }
+
 
 // Call the main function to start the process
 manageProcess();

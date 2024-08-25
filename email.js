@@ -5,7 +5,7 @@ let transporter = nodemailer.createTransport({
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'vrevankar@wpi.edu', // Your Outlook email address
+        user: '', // Your Outlook email address
         pass: '' // Your Outlook password or application-specific password
     }
 });
@@ -13,8 +13,8 @@ let transporter = nodemailer.createTransport({
 exports.sendMail = (message) => {
     // Email message options
     let mailOptions = {
-        from: 'vrevankar@wpi.edu', // Sender address
-        to: "vinayakrevankar1996@gmail.com", // List of recipients
+        from: '', // Sender address
+        to: "", // List of recipients
         subject: 'Job Available', // Subject line
         html: message
     };
