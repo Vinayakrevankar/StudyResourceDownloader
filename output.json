@@ -336,18 +336,6 @@
     "jobType": ": Federal Work-Study"
   },
   {
-    "title": "Late Night Programming Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4693&win=True",
-    "employer": "Student Activities - JM (Christine Ziev)",
-    "wage": ": $15.00/hr to $16.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/29/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
     "title": "Mail Clerk",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4750&win=True",
     "employer": "Mail Services - JM (Jason Lusignan)",
@@ -480,42 +468,6 @@
     "jobType": ": Federal Work-Study"
   },
   {
-    "title": "Sports Information Office Staff – WPI Athletics Sports Information",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4688&win=True",
-    "employer": "Athletics - JM (Danielle Rafuse)",
-    "wage": ": $15.00/hr",
-    "openings": ": 2",
-    "listedDate": ": 08/12/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Federal Work-Study"
-  },
-  {
-    "title": "Sports Media – WPI Athletics Sports Information",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4687&win=True",
-    "employer": "Athletics - JM (Danielle Rafuse)",
-    "wage": ": $15.00/hr",
-    "openings": ": 2",
-    "listedDate": ": 08/12/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Federal Work-Study"
-  },
-  {
-    "title": "Student Activities Trips Program Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4703&win=True",
-    "employer": "Student Activities - JM (Christine Ziev)",
-    "wage": ": $15.00/hr to $16.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/15/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
     "title": "Surface Metrology Assistant",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4633&win=True",
     "employer": "Mechanical and Materials Engineering - JM (Christopher Brown)",
@@ -540,11 +492,23 @@
     "jobType": ": Hourly Students"
   },
   {
+    "title": "UH Lab Monitor (Federal Work Study Position)",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4757&win=True",
+    "employer": "Innovation & Entrepreneurship - JM (Mitra Anand)",
+    "wage": ": $15.00/hr",
+    "openings": ": 6",
+    "listedDate": ": 09/02/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
     "title": "Undergrad Student Collaborator on Teaching (SCOT)",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4742&win=True",
     "employer": "Morgan Teaching and Learning Center - JM (Jessi Hill)",
     "wage": ": $15.00/hr",
-    "openings": ": 5",
+    "openings": ": 4",
     "listedDate": ": 08/20/2024",
     "hours": "N/A",
     "location": "N/A",
@@ -598,6 +562,18 @@
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Web Developer",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4789&win=True",
+    "employer": "Marketing and Communications - JM (Besart Bytyqi)",
+    "wage": ": $18.25/hr to $25.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 08/30/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
   },
   {
     "title": "Web Developer – BoGL",
