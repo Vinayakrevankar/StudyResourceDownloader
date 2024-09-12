@@ -1,29 +1,5 @@
 [
   {
-    "title": "After School Program Tutor and Facilitator",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4785&win=True",
-    "employer": "Community Partnerships and Educational Equity - JM (Noemi Robertson)",
-    "wage": ": $16.25/hr to $18.00/hr",
-    "openings": ": 1",
-    "listedDate": ": 08/29/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Hourly Students"
-  },
-  {
-    "title": "Business School Office Support",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4735&win=True",
-    "employer": "Business School - JM (Lorelle Tross)",
-    "wage": ": $15.00/hr",
-    "openings": ": 8",
-    "listedDate": ": 08/19/2024",
-    "hours": "N/A",
-    "location": "N/A",
-    "category": "N/A",
-    "jobType": ": Federal Work-Study"
-  },
-  {
     "title": "Chemical Inventory Technician - CBC",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4608&win=True",
     "employer": "Chemistry & Biochemistry - JM (Nick Bold)",
@@ -84,6 +60,30 @@
     "jobType": ": Federal Work-Study"
   },
   {
+    "title": "Global Lab Extended Reality (XR) Specialist",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4801&win=True",
+    "employer": "Integrative and Global Studies - JM (Hannah Shick)",
+    "wage": ": $15.00/hr to $16.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 09/12/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
+    "title": "Global Lab Graphic Designer/Web Developer",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4800&win=True",
+    "employer": "Integrative and Global Studies - JM (Hannah Shick)",
+    "wage": ": $15.00/hr to $16.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 09/12/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Hourly Students"
+  },
+  {
     "title": "Graduate Assistant",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4670&win=True",
     "employer": "Mechanical and Materials Engineering - JM (Robert Hyers )",
@@ -133,15 +133,39 @@
   },
   {
     "title": "Hourly Research Assistant",
-    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4755&win=True",
-    "employer": "Fire Protection Engineering - JM (Diane Poirier)",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4795&win=True",
+    "employer": "Business School - JM (Nima Kordzadeh)",
     "wage": ": $20.33/hr",
     "openings": ": 1",
-    "listedDate": ": 08/21/2024",
+    "listedDate": ": 09/09/2024",
     "hours": "N/A",
     "location": "N/A",
     "category": "N/A",
     "jobType": ": Hourly Research Assistant"
+  },
+  {
+    "title": "i3 Lab Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4793&win=True",
+    "employer": "Business School - JM (Sandhya Balasubramanian)",
+    "wage": ": $15.00/hr",
+    "openings": ": 4",
+    "listedDate": ": 09/09/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "IMGD Marketing Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4802&win=True",
+    "employer": "Interactive Media Game Development - IMGD - JM (Allison Darling)",
+    "wage": ": $15.00/hr",
+    "openings": ": 2",
+    "listedDate": ": 09/11/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
   },
   {
     "title": "Lab Assistant - Coburn",
@@ -228,7 +252,19 @@
     "jobType": ": Federal Work-Study"
   },
   {
-    "title": "Makerspace Workshop Instructor (Federal Work Study Position)",
+    "title": "Mail Delivery Assistant",
+    "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4803&win=True",
+    "employer": "Mail Services - JM (Jason Lusignan)",
+    "wage": ": $15.00/hr",
+    "openings": ": 1",
+    "listedDate": ": 09/12/2024",
+    "hours": "N/A",
+    "location": "N/A",
+    "category": "N/A",
+    "jobType": ": Federal Work-Study"
+  },
+  {
+    "title": "Makerspace Workshop Instructor",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4756&win=True",
     "employer": "Innovation & Entrepreneurship - JM (Mitra Anand)",
     "wage": ": $15.00/hr",
@@ -360,7 +396,7 @@
     "jobType": ": Hourly Students"
   },
   {
-    "title": "UH Lab Monitor (Federal Work Study Position)",
+    "title": "UH Lab Monitor",
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4757&win=True",
     "employer": "Innovation & Entrepreneurship - JM (Mitra Anand)",
     "wage": ": $15.00/hr",
@@ -376,7 +412,7 @@
     "url": "https://wpi.studentemployment.ngwebsolutions.com/jobxJobdetailPrint.aspx?JobId=4742&win=True",
     "employer": "Morgan Teaching and Learning Center - JM (Jessi Hill)",
     "wage": ": $15.00/hr",
-    "openings": ": 3",
+    "openings": ": 2",
     "listedDate": ": 08/20/2024",
     "hours": "N/A",
     "location": "N/A",
